@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Create a New Event</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="form.js"></script>
+    </head>
+    <body>
+
+<div class="EVENTFORM">
+    <br>
+        <label for="EventType">Event Type:</label>
+        <select name="EVType" id = "eType" required>
+          <option value = '1'>Choose one</option>
+          <option value = '2'>Birthday</option>
+          <option value = '3'>Wedding</option>
+          <option value = '4'>Christmas Party</option>
+          <option value = '5'>Others</option>
+        </select>
+        <br>
+
+
+        <label for ="EventTitle" >Event Title:</label>
+        <input type = "text" style="width:50%" name = "evTitle" id = "ETitle" required><br/>        
+
+        <label for ="EventDateStart">Event Dates:</label>
+        <input type = "date" name = "evDateStart" id = "EDateStart" required>
+        to
+        <input type = "date" name = "evDateEnd" id = "EDateEnd" required>
+        <br/>
+
+
+        <label for ="EventPostDate">Posting Date:</label>
+        <input type = "date" name = "evPostDate" id = "EPostDate" required><br>
+        
+        
+        <input type="checkbox" id="CH1" name="REGREQ" value="True">
+        <label for="CH1">Is Registration Requierd?</label><br>        
+
+        <input type="checkbox" id="CH2" name="FAMASS" value="True">
+        <label for="CH2">Is this event associated with any Family Programs</label><br> 
+
+        <input type="checkbox" id="CH3" name="AUTOEM" value="True">
+        <label for="CH3">Upon Registration Completion, Are Users to Recieve an Auto Generated Email?</label><br> 
+
+        <input type="checkbox" id="CH4" name="POC" value="True">
+        <label for="C">Is There a Point of Contact</label><br> 
+
+        <input type="checkbox" id="CH5" name="HCPOC" value="True">
+        <label for="CH5">Is There a Hosting Command Point of Contact</label><br>
+  <br><br>
+ 
+        
+</div>
+       
+<div class="centbutt">
+    
+    <input type="button" value="Save" onclick="checkforblank()">
+    <input type="button" value="Cancel" onclick="cancelbutt()"><br>
+</div>
+
+
+    </body>
+</html>

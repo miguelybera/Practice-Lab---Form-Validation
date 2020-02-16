@@ -1,0 +1,16 @@
+.EVENTFORM {
+    width: 1500px;
+    padding-left: 25%;
+
+}
+input { margin-bottom: 10px; }
+select { margin-bottom: 10px; }
+
+.centbutt {
+width: 400px;
+height: 400px;
+margin: 20px auto;
+text-align: center;
+    
+}
+
